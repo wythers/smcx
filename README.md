@@ -1,26 +1,35 @@
-# echoContract
+# SMCX -- smart contract creator
 
-## Project structure
 
--   `contracts` - source code of all the smart contracts of the project and their dependencies.
--   `wrappers` - wrapper classes (implementing `Contract` from ton-core) for the contracts, including any [de]serialization primitives and compilation functions.
--   `tests` - tests for the contracts.
--   `scripts` - scripts used by the project, mainly the deployment scripts.
 
-## How to use
+```javscript
+        // specialize smcxConfig.json file and then
+        $ npm start
+```
 
-### Build
+And
 
-`npx blueprint build` or `yarn blueprint build`
+```javascript
+        // take echo contract as an example
+        import { useEchoContract } from 'Your-company-lib/smc/echo'
 
-### Test
 
-`npx blueprint test` or `yarn blueprint test`
+        function App() {
+                const { status, sendEchoableTON } = useEchoContract();
+                
+                return (
+                        <div className='App'>
+                                <button
+                                        disabled={status == 'done'}
+                                        className={`Button Active`}
+                                        onClick={() => {
+                                        sendEchoableTON("0.012");
+                                }}
+                                >
+                                        Echo
+                                </button>
+                        </div>
+                );
+        }
 
-### Deploy or run another script
-
-`npx blueprint run` or `yarn blueprint run`
-
-### Add a new contract
-
-`npx blueprint create ContractName` or `yarn blueprint create ContractName`
+```

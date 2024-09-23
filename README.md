@@ -14,6 +14,9 @@ And
 import { useEchoContract } from 'echo'
 
 function App() {
+//        
+//             status from "standby" -> "processing" -> "done"
+//        
         const { status, sendEchoableTON } = useEchoContract();
                 
         return (

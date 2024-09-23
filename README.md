@@ -10,8 +10,8 @@ $ npm start
 And
 
 ```javascript
-// take echo contract as an example
-import { useEchoContract } from 'Your-company-lib/smc/echo'
+// take echo contract as an example, copy library/echo to your project dir
+import { useEchoContract } from 'echo'
 
 function App() {
         const { status, sendEchoableTON } = useEchoContract();

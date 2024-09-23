@@ -1,0 +1,11 @@
+{
+        "deployTON": "0.01",
+
+        "smc": {
+                "echo": {
+                        "masterAddress": "UQBE-e4w4MFNDnpWgS9zqfZ2bby-mgVhVZKEm_61dtopAZzv",
+                        "codeBOC": "te6ccgEBCAEAmgABFP8A9KQT9LzyyAsBAgEgAgMCAs8EBQAE8jACASAGBwAt04wAhkZYKoAeeLOH0BCWW1ZmTAIH2AQAkUbCIgxwCRW+AB0NMDMfpAMO1E0PpAMFzHBbOOKALTH4IQD4p+qlIgupMC8AORMuKCEHNi0My6mnDIyx8BzxbJ8ASRW+KSXwPigAJ1cIAQyMsFWM8WIfoCy2rJgED7AI"
+                }
+        }
+}
+    
